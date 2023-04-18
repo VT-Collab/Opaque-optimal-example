@@ -12,6 +12,7 @@ parser.add_argument('--example', default="fully",
 args = parser.parse_args()
 
 
+# formalize the stochastic bayesian game
 class ExampleSBG:
 
      # initialization
@@ -88,6 +89,29 @@ class ExampleSBG:
         return pi, V1
 
 
+# rollout the human and robot behavior starting at augmented state
+# prints the team state and the human's belief
+def rollout_team(augmented_state, pi, mdp, robot_type, human_type):
+    s = copy.deepcopy(augmented_state)
+    print("Belief: ", s[2], "State: ", s[1])
+    for t in range(mdp.T-1):
+        astar = pi[s]
+        # rational human follows the optimal policy
+        if human_type == "rational":
+            ah = astar[0]
+        # irrational human samples action at random
+        # here an adversarial case occurs when human pushes right
+        elif human_type == "irrational":
+            ah = +0.2
+        # robot follows optimal policy
+        if robot_type == "confused":
+            ar = astar[1]
+        elif robot_type == "capable":
+            ar = astar[2]
+        s = mdp.f(s, ah, ar)
+        print("Belief: ", s[2], "State: ", s[1])    
+
+
 def main():
 
     # choose initial augmented state
@@ -100,54 +124,16 @@ def main():
     block1d = ExampleSBG()
     pi, V = block1d.value_iteration()
 
-    ### rollout the *Confused* robot with rational and irrational humans
-
-    ## confused robot with rational human
-    s = copy.deepcopy(augmented_state)
     print("[*] Confused Robot with Rational Human")
-    print("Belief: ", s[2], "State: ", s[1])
-    for t in range(block1d.T-1):
-        astar = pi[s]
-        # rational human follows the optimal policy
-        ah = astar[0]
-        s = block1d.f(s, ah, astar[1])
-        print("Belief: ", s[2], "State: ", s[1])
-
-    ## confused robot with irrational human
-    s = copy.deepcopy(augmented_state)
+    rollout_team(augmented_state, pi, block1d, "confused", "rational")
+    
     print("[*] Confused Robot with Irrational Human")
-    print("Belief: ", s[2], "State: ", s[1])
-    for t in range(block1d.T-1):
-        astar = pi[s]
-        # irrational human samples action at random
-        # the most adversarial case occurs when human always pushes right
-        ah = +0.2
-        s = block1d.f(s, ah, astar[1])
-        print("Belief: ", s[2], "State: ", s[1])
+    rollout_team(augmented_state, pi, block1d, "confused", "irrational")
 
-    ### rollout the *Capable* robot with rational and irrational humans
-
-    ## capable robot with rational human
-    s = copy.deepcopy(augmented_state)
     print("[*] Capable Robot with Rational Human")
-    print("Belief: ", s[2], "State: ", s[1])
-    for t in range(block1d.T-1):
-        astar = pi[s]
-        # rational human follows the optimal policy
-        ah = astar[0]
-        s = block1d.f(s, ah, astar[2])
-        print("Belief: ", s[2], "State: ", s[1])
-
-    ## capable robot with irrational human
-    s = copy.deepcopy(augmented_state)
+    rollout_team(augmented_state, pi, block1d, "capable", "rational")
+    
     print("[*] Capable Robot with Irrational Human")
-    print("Belief: ", s[2], "State: ", s[1])
-    for t in range(block1d.T-1):
-        astar = pi[s]
-        # irrational human samples action at random
-        # the most adversarial case occurs when human always pushes right
-        ah = +0.2
-        s = block1d.f(s, ah, astar[2])
-        print("Belief: ", s[2], "State: ", s[1])
+    rollout_team(augmented_state, pi, block1d, "capable", "irrational")
 
 main()
