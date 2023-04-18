@@ -1,4 +1,4 @@
-# Should Collaborative Robots be Transparent
+# Should Collaborative Robots be Transparent?
 
 Code for the example in Section 4.C of our paper ["Should Collaborative Robots be Transparent?"](link).
 
