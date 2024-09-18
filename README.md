@@ -37,10 +37,11 @@ Results from running `python.py`
 ## Online Study Scenes
 
 <div style="display: flex; justify-content: center; align-items: center;">
-  <div style="display: flex; flex-direction: column; align-items: center;">
-    <img src="https://github.com/user-attachments/assets/9d7e976e-4b9d-44a9-a691-dbfff49aa457" style="width: 200px; height: auto; margin: 10px 0;">
-    <img src="https://github.com/user-attachments/assets/fbf0027b-abfc-4b1b-97b8-d01ce8642942" style="width: 200px; height: auto; margin: 10px 0;">
-    <img src="https://github.com/user-attachments/assets/0ad20d35-c1c0-4653-a3ee-5086894d0a65" style="width: 200px; height: auto; margin: 10px 0;">
-  </div>
+  <img src="https://github.com/user-attachments/assets/9d7e976e-4b9d-44a9-a691-dbfff49aa457" style="width: 200px; height: auto; margin: 0 10px;">
+  <img src="https://github.com/user-attachments/assets/fbf0027b-abfc-4b1b-97b8-d01ce8642942" style="width: 200px; height: auto; margin: 0 10px;">
+  <img src="https://github.com/user-attachments/assets/0ad20d35-c1c0-4653-a3ee-5086894d0a65" style="width: 200px; height: auto; margin: 0 10px;">
 </div>
+
+### Online Study Survey Questions
+
 
