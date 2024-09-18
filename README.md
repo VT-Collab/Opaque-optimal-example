@@ -35,7 +35,7 @@ Results from running `python.py`
  - *--example rationally* | the human's final belief should be 0.0 for capable and confused robots if the human is rational. When the human is *irrational*, the final belief for confused is 0.0 and the final belief for capable is 0.4. By perturbing the system the irrational human uncovers information about the robot's type.
 
 ## Online Study Scenes
-
+The following gifs correspond to the three tasks in our online user study: Passing, Parking, and Turning. The gifs include two example behaviors observed during the experiment.
 <div style="display: flex; justify-content: center; align-items: center;">
   <img src="https://github.com/user-attachments/assets/9d7e976e-4b9d-44a9-a691-dbfff49aa457" style="width: 200px; height: auto; margin: 0 10px;">
   <img src="https://github.com/user-attachments/assets/fbf0027b-abfc-4b1b-97b8-d01ce8642942" style="width: 200px; height: auto; margin: 0 10px;">
@@ -43,7 +43,7 @@ Results from running `python.py`
 </div>
 
 ### Online Study Survey Questions
-
+Below is an image of the user interface. This include instructions, an image of the current state, and a multiple choice menu for the human to select their next action:
 <div style="display: flex; justify-content: center; align-items: center;">
   <img src="https://github.com/user-attachments/assets/46fd9d6c-b7c4-4a92-857a-b273c255d71c" style="width: 600px; height: auto; margin: 0 10px;">
   <img src="https://github.com/user-attachments/assets/335dc63c-5087-4bdd-b9e9-136ef0e9b3ba" style="width: 600px; height: auto; margin: 0 10px;">
