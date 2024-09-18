@@ -44,4 +44,10 @@ Results from running `python.py`
 
 ### Online Study Survey Questions
 
+<div style="display: flex; justify-content: center; align-items: center;">
+  <img src="https://github.com/user-attachments/assets/46fd9d6c-b7c4-4a92-857a-b273c255d71c" style="width: 600px; height: auto; margin: 0 10px;">
+  <img src="https://github.com/user-attachments/assets/335dc63c-5087-4bdd-b9e9-136ef0e9b3ba" style="width: 600px; height: auto; margin: 0 10px;">
+</div>
+
+
 
