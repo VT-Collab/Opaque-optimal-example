@@ -36,8 +36,10 @@ Results from running `python.py`
 
 ## Online Study Scenes
 
-![passing](https://github.com/user-attachments/assets/9d7e976e-4b9d-44a9-a691-dbfff49aa457)
-![parking](https://github.com/user-attachments/assets/fbf0027b-abfc-4b1b-97b8-d01ce8642942)
-![turning](https://github.com/user-attachments/assets/0ad20d35-c1c0-4653-a3ee-5086894d0a65)
+## Online Study Scenes
+
+<img src="https://github.com/user-attachments/assets/9d7e976e-4b9d-44a9-a691-dbfff49aa457" width="200" height="200">
+<img src="https://github.com/user-attachments/assets/fbf0027b-abfc-4b1b-97b8-d01ce8642942" width="200" height="200">
+<img src="https://github.com/user-attachments/assets/0ad20d35-c1c0-4653-a3ee-5086894d0a65" width="200" height="200">
 
 
