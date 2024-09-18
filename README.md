@@ -46,6 +46,10 @@ The following gifs correspond to the three tasks in our online user study: *Pass
 Below is an image of the user interface. This include instructions, an image of the current state, and a multiple choice menu for the human to select their next action:
 <div style="display: flex; justify-content: center; align-items: center;">
   <img src="https://github.com/user-attachments/assets/46fd9d6c-b7c4-4a92-857a-b273c255d71c" style="width: 600px; height: auto; margin: 0 10px;">
+</div>
+
+At the end of each interaction, participants answered a question about their subjective perception of the robot partner. This question (and the scale for answering) is shown below:
+<div style="display: flex; justify-content: center; align-items: center;">
   <img src="https://github.com/user-attachments/assets/335dc63c-5087-4bdd-b9e9-136ef0e9b3ba" style="width: 600px; height: auto; margin: 0 10px;">
 </div>
 
